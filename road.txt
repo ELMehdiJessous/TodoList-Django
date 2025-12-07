@@ -1,0 +1,100 @@
+*Projet : Application de Liste de Tâches avec Django*
+
+*Équipe :*
+
+- Ingénieur 1 (E1)
+- Ingénieur 2 (E2)
+
+*Aperçu du Projet :*
+
+L'objectif de ce projet est de créer une application de liste de tâches simple utilisant Django. L'application devra permettre aux utilisateurs de créer, lire, mettre à jour et supprimer (CRUD) des tâches.
+
+*Structure du Projet :*
+
+```
+todo_list/
+    todo/
+        __init__.py
+        admin.py
+        models.py
+        views.py
+        templates/
+            todo/
+                base.html
+                task_list.html
+                task_form.html
+        urls.py
+    users/
+        __init__.py
+        models.py
+        views.py
+        templates/
+            users/
+                login.html
+                register.html
+        urls.py
+    todo_list/
+        __init__.py
+        settings.py
+        urls.py
+    manage.py
+    requirements.txt
+```
+
+*Jalons et Livrables :*
+
+1. *Jalon 1 : Configuration du Projet et Planification*
+    - E1 : Configurer la structure du projet et créer un nouveau projet Django.
+    - E2 : Créer une nouvelle application Django pour la Liste de Tâches.
+    - Livrable : La configuration du projet est terminée, et l'équipe a une compréhension claire de la portée du projet.
+2. *Jalon 2 : Modèles et Base de Données*
+    - E1 : Définir le modèle de tâche et créer la base de données.
+    - E2 : Implémenter la validation des données et les tests pour le modèle de tâche.
+    - Livrable : Le modèle de tâche est défini, et la base de données est créée.
+3. *Jalon 3 : Vues et Templates*
+    - E1 : Implémenter les vues pour les opérations CRUD.
+    - E2 : Créer les templates pour l'application de Liste de Tâches.
+    - Livrable : Les vues et les templates sont implémentés, et l'application est fonctionnelle.
+4. *Jalon 4 : Authentification et Autorisation des Utilisateurs*
+    - E1 : Implémenter l'authentification et l'autorisation des utilisateurs.
+    - E2 : Tester et valider l'authentification et l'autorisation des utilisateurs.
+    - Livrable : L'authentification et l'autorisation des utilisateurs sont implémentées et fonctionnent correctement.
+5. *Jalon 5 : Tests et Déploiement*
+    - E1 : Écrire des tests unitaires et des tests d'intégration pour l'application.
+    - E2 : Déployer l'application dans un environnement de production.
+    - Livrable : L'application est déployée et fonctionne correctement en production.
+
+*Répartition des Tâches :*
+
+- E1 :
+    - Configuration du projet et planification
+    - Définition du modèle de tâche et création de la base de données
+    - Implémentation des vues pour les opérations CRUD
+    - Implémentation de l'authentification et de l'autorisation des utilisateurs
+    - Écriture des tests unitaires et des tests d'intégration
+- E2 :
+    - Création d'une nouvelle application Django pour la Liste de Tâches
+    - Implémentation de la validation des données et des tests pour le modèle de tâche
+    - Création des templates pour l'application de Liste de Tâches
+    - Test et validation de l'authentification et de l'autorisation des utilisateurs
+    - Déploiement de l'application dans un environnement de production
+
+*Plan de Communication :*
+
+- Réunions quotidiennes pour discuter de l'avancement et des blocages.
+- Réunions bihebdomadaires pour examiner l'avancement et planifier les prochaines étapes.
+- Utilisation d'un outil de gestion de projet comme Trello ou Asana pour suivre les tâches et l'avancement.
+
+*Indicateurs de Performance Clés (KPI) :*
+
+- Qualité et maintenabilité du code
+- Couverture des tests et qualité
+- Fréquence et taux de réussite du déploiement
+- Satisfaction et feedback des utilisateurs
+
+*Risques et Stratégies de Mitigation :*
+
+- Risque : Retards dans l'exécution des tâches
+- Stratégie de Mitigation : Suivi régulier de l'avancement et des blocages
+- Risque : Défis techniques
+- Stratégie de Mitigation : Programmation en paire et partage des connaissances

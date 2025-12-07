@@ -1,0 +1,8 @@
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Username" name="username"><br>
+    <input type="password" placeholder="Password" name="password" ><br>
+    <input type="submit" value="login">
+</form>
+<a href="{% url 'password_reset' %}">نسيت كلمة المرور؟</a><br>
+<a href="{% url 'signup' %}">signup ?</a><br>
