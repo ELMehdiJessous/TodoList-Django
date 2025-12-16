@@ -15,7 +15,7 @@
         .todo-header {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             color: white;
-            padding: 2rem 0;
+            padding: 1rem 0;
             border-radius: 0 0 20px 20px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             margin-bottom: 2rem;
@@ -157,12 +157,21 @@
 <body>
     <header class="todo-header">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
+            <div class="d-flex align-items-center justify-content-between">
+                
+                <div>
                     <h1>Todo List</h1>
-                    <p>Stay organized and boost your productivity</p>
-                </div>    
-            </div>    
+                    <p>Hello "{{ request.user.username }}", stay organized and boost your productivity</p>
+                </div>
+
+                <form method="post" action="{% url 'logout' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">
+                        Logout
+                    </button>
+                </form>
+
+            </div>
         </div>
     </header>
     <main class="container">
